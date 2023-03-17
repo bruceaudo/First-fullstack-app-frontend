@@ -7,15 +7,15 @@ import Register from './pages/Register';
 import ResetPassword from './pages/ResetPassword';
 
 
-const App:React.FC = () => {
+const App = () => {
   
   return <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/reset" element={<ResetPassword />} />
       </Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/reset" element={<ResetPassword />} />
     </Routes>;
 }
 export default App;
